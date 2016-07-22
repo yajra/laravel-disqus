@@ -31,7 +31,7 @@ Append the following config on your `.env` file.
 
 ``` php
 DISQUS_ENABLED=true
-DISQUS_USERNAME=your_disqus_username
+DISQUS_USERNAME=you_website_shortname
 ```
 
 ## Usage
