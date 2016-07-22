@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="yajra Test Suite">
+        <testsuite name="Yajra Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
