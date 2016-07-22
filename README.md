@@ -18,7 +18,7 @@ $ composer require yajra/laravel-disqus
 
 - Register service provider
 ```php
-Yajra/Disqus/DisqusServiceProvider::class
+Yajra\Disqus\DisqusServiceProvider::class
 ```
 
 - Publish config
