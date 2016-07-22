@@ -1,4 +1,4 @@
-# laravel-disqus
+# Laravel - Disqus Platform Integration
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -7,22 +7,37 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
+A simple package integrating Disqus platform with Laravel.
 
 ## Install
 
-Via Composer
-
+- Via Composer
 ``` bash
 $ composer require yajra/laravel-disqus
 ```
 
-## Usage
+- Register service provider
+```php
+Yajra/Disqus/DisqusServiceProvider::class
+```
+
+- Publish config
+```bash
+$ php artisan vendor:publish --tag=disqus
+```
+
+## Config
+Append the following config on your `.env` file.
 
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+DISQUS_ENABLED=true
+DISQUS_USERNAME=your_disqus_username
+```
+
+## Usage
+To display Disqus platform on your page, just add:
+```html
+<div id="disqus_thread"></div>
 ```
 
 ## Change log
