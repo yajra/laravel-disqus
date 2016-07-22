@@ -3,6 +3,7 @@
 namespace Yajra\Disqus;
 
 use Closure;
+use Illuminate\Support\Str;
 
 class DisqusMiddleware
 {
@@ -29,10 +30,15 @@ class DisqusMiddleware
      *
      * @param  \Illuminate\Http\Request $request
      * @param  \Illuminate\Http\Response $response
+     * @return mixed
      */
     protected function appendDisqusScript($request, $response)
     {
         $content = $response->getContent();
+
+        if (! Str::contains($content, '<div id="disqus_thread"></div>')) {
+            return;
+        }
 
         $uri      = $request->getRequestUri();
         $pageUrl  = url($uri);
