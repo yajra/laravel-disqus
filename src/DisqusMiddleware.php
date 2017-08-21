@@ -42,7 +42,7 @@ class DisqusMiddleware
 
         $uri      = $request->getRequestUri();
         $pageUrl  = url($uri);
-        $pageId   = 'route' . implode('.', explode('/', $uri));
+        $pageId   = $uri;
         $username = config('disqus.username');
 
         $disqusHtml = <<<CDATA
