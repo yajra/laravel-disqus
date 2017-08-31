@@ -2,7 +2,8 @@
 
 All Notable changes to `laravel-disqus` will be documented in this file
 
-## NEXT - YYYY-MM-DD
+### v1.1.0 - 2017-07-31
+- Add support for Laravel 5.5 package discovery.
 
 ### v1.0.0 - 2017-01-05
 - First major version.
