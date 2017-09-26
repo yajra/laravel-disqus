@@ -2,6 +2,9 @@
 
 All Notable changes to `laravel-disqus` will be documented in this file
 
+### v1.1.1 - 2017-09-26
+- Fix noscript html #5, credits to @the94air.
+
 ### v1.1.0 - 2017-07-31
 - Add support for Laravel 5.5 package discovery.
 
