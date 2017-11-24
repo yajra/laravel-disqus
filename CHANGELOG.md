@@ -2,6 +2,9 @@
 
 All Notable changes to `laravel-disqus` will be documented in this file
 
+### v1.1.2 - 2017-11-24
+- Make publishing of config optional. [commit](https://github.com/yajra/laravel-disqus/commit/2db629d79c125947d68740007f056a6cce5f3e77)
+
 ### v1.1.1 - 2017-09-26
 - Fix noscript html #5, credits to @the94air.
 
