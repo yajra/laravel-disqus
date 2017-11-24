@@ -15,6 +15,7 @@ A simple package integrating Disqus platform with Laravel.
 ``` bash
 $ composer require yajra/laravel-disqus
 ```
+> If you are using Laravel 5.5+ then the steps below are optional.
 
 - Register service provider
 ```php
