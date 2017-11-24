@@ -2,8 +2,8 @@
 
 namespace Yajra\Disqus;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Support\ServiceProvider;
 
 class DisqusServiceProvider extends ServiceProvider
 {
