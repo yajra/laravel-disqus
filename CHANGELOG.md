@@ -2,6 +2,10 @@
 
 All Notable changes to `laravel-disqus` will be documented in this file
 
+### v1.2.2 - 2020-03-07
+
+- Code clean-up, fix cs, remove discuss js comments.
+
 ### v1.2.1 - 2020-03-07
 
 - Fix composer typo.
