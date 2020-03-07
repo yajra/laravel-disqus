@@ -22,7 +22,7 @@
       "illuminate/filesystem": "*"
     },
     "require-dev": {
-        "phpunit/phpunit" : "*",
+        "phpunit/phpunit" : "*"
     },
     "autoload": {
         "psr-4": {
