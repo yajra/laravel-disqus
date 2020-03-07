@@ -29,14 +29,6 @@
             "Yajra\\Disqus\\": "src"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Yajra\\Disqus\\Test\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "phpunit"
-    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
