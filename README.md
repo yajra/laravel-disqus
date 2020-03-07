@@ -40,15 +40,9 @@ To display Disqus platform on your page, just add:
 <div id="disqus_thread"></div>
 ```
 
-## Change log
+## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-## Testing
-
-``` bash
-$ composer test
-```
 
 ## Contributing
 
