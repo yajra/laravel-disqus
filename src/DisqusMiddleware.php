@@ -52,7 +52,7 @@ class DisqusMiddleware
          this.page.identifier = '$pageId';
      };
 
-    (function() {  // DON'T EDIT BELOW THIS LINE
+    (function() {
         var d = document, s = d.createElement('script');
 
         s.src = '//$username.disqus.com/embed.js';
