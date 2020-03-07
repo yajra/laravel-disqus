@@ -40,9 +40,9 @@ class DisqusMiddleware
             return;
         }
 
-        $uri      = $request->getRequestUri();
-        $pageUrl  = url($uri);
-        $pageId   = 'route' . implode('.', explode('/', $uri));
+        $uri = $request->getRequestUri();
+        $pageUrl = url($uri);
+        $pageId = 'route'.implode('.', explode('/', $uri));
         $username = config('disqus.username');
 
         $disqusHtml = <<<CDATA
@@ -67,7 +67,7 @@ CDATA;
         $bodyPosition = strripos($content, '</body>');
 
         if (false !== $bodyPosition) {
-            $content = substr($content, 0, $bodyPosition) . $disqusHtml . substr($content, $bodyPosition);
+            $content = substr($content, 0, $bodyPosition).$disqusHtml.substr($content, $bodyPosition);
         }
 
         $response->setContent($content);

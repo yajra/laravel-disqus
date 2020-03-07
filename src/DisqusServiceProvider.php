@@ -24,7 +24,7 @@ class DisqusServiceProvider extends ServiceProvider
      */
     protected function publishConfig()
     {
-        $path = __DIR__ . '/../config/disqus.php';
+        $path = __DIR__.'/../config/disqus.php';
         $this->mergeConfigFrom($path, 'disqus');
         $this->publishes([
             $path => config_path('disqus.php'),
