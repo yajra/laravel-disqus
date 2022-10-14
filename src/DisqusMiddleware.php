@@ -18,7 +18,7 @@ class DisqusMiddleware
     {
         $response = $next($request);
 
-        if (config('disqus.enabled', false) && ! empty(config('disqus.username'))) {
+        if ((config('disqus.enabled', false)) && (! empty(config('disqus.username')))) {
             $this->appendDisqusScript($request, $response);
         }
 
